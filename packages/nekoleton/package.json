@@ -2,17 +2,42 @@
   "name": "nekoleton",
   "version": "0.0.0",
   "description": "Project skeleton for nekolib",
-  "author": "esnya <esnya@nekometer.com>",
   "homepage": "https://gtihub.com/esnya/nekolib#README",
-  "license": "MIT",
-  "files": [
-    "lib"
-  ],
   "repository": {
     "type": "git",
     "url": "https://gtihub.com/esnya/nekolib.git"
   },
+  "license": "MIT",
+  "author": "esnya <esnya@nekometer.com>",
+  "main": "lib/main",
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "clean": "rimraf lib",
+    "build": "tsc -b",
+    "lint": "eslint src/**/* tests/**/*",
+    "test": "mocha -r source-map-support/register -r ts-node/register -r tests/setup.ts src/**/*.spec.ts tests/**/*.spec.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.2",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "@types/sinon-chai": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.2.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "sinon": "^7.4.2",
+    "sinon-chai": "^3.3.0",
+    "source-map-support": "^0.5.13",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.1"
   }
 }
