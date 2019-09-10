@@ -1,0 +1,18 @@
+{
+  "name": "nekoleton",
+  "version": "0.0.0",
+  "description": "Project skeleton for nekolib",
+  "author": "esnya <esnya@nekometer.com>",
+  "homepage": "https://gtihub.com/esnya/nekolib#README",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gtihub.com/esnya/nekolib.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
